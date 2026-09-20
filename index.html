@@ -1,1 +1,203 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicola Canale</title>
+<meta name="description" content="Nicola Canale — experimental physicist, University of Ferrara and INFN Ferrara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFBF9;
+    --ink:#1A1D21;
+    --muted:#5C6470;
+    --rule:#DCDFE2;
+    --beam:#0F8B8D;
+    --measure:34rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#16181B; --ink:#EEF0F1; --muted:#9BA3AC; --rule:#2C3035; --beam:#3FC1C3; }
+  }
+
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:inherit; }
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--beam);
+    outline-offset:3px;
+  }
+
+  .page{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:clamp(2.5rem, 8vw, 5.5rem) 1.5rem 4rem;
+  }
+
+  /* --- masthead --- */
+  .portrait{
+    width:104px; height:104px;
+    border-radius:2px;
+    object-fit:cover;
+    display:block;
+    margin-bottom:1.75rem;
+    filter:grayscale(1) contrast(1.04);
+  }
+  h1{
+    font-size:clamp(2.1rem, 7vw, 2.9rem);
+    font-weight:600;
+    letter-spacing:-0.025em;
+    line-height:1.08;
+    margin:0 0 1.1rem;
+  }
+  /* the beam: one hairline that runs past the text block */
+  .beam{
+    height:2px;
+    background:var(--beam);
+    border:0;
+    margin:0 0 1.1rem;
+    width:100%;
+  }
+  .standfirst{
+    margin:0;
+    color:var(--muted);
+    max-width:30rem;
+  }
+  .standfirst strong{ color:var(--ink); font-weight:500; }
+
+  /* --- sections --- */
+  section{ margin-top:3.25rem; }
+  h2{
+    font-size:0.95rem;
+    font-weight:600;
+    margin:0 0 0.9rem;
+    padding-bottom:0.55rem;
+    border-bottom:1px solid var(--rule);
+  }
+  p{ margin:0 0 1rem; }
+  p:last-child{ margin-bottom:0; }
+
+  /* affiliations / identifiers as a description list */
+  dl{ margin:0; }
+  .row{
+    display:grid;
+    grid-template-columns:9.5rem 1fr;
+    gap:0.4rem 1.25rem;
+    padding:0.6rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .row:last-child{ border-bottom:0; }
+  dt{ color:var(--muted); font-size:0.9rem; }
+  dd{ margin:0; }
+  dd a{ text-decoration-color:var(--rule); text-underline-offset:3px; }
+  dd a:hover{ text-decoration-color:var(--beam); }
+
+  @media (max-width:32rem){
+    .row{ grid-template-columns:1fr; gap:0.1rem; }
+  }
+
+  /* --- save contact --- */
+  .save{
+    display:inline-flex;
+    align-items:center;
+    gap:0.6rem;
+    margin-top:0.4rem;
+    padding:0.7rem 1.15rem;
+    background:var(--beam);
+    color:#fff;
+    text-decoration:none;
+    border-radius:3px;
+    font-weight:500;
+    font-size:0.97rem;
+  }
+  @media (prefers-color-scheme: dark){ .save{ color:#10262B; } }
+  .save svg{ width:17px; height:17px; flex:none; }
+  .hint{
+    margin-top:0.8rem;
+    font-size:0.88rem;
+    color:var(--muted);
+  }
+
+  footer{
+    margin-top:4rem;
+    padding-top:1rem;
+    border-top:1px solid var(--rule);
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <img class="portrait" src="foto.jpg" alt="Nicola Canale">
+
+  <h1>Nicola Canale</h1>
+  <hr class="beam">
+  <p class="standfirst">
+    Experimental physicist at the <strong>University of Ferrara</strong> and
+    <strong>INFN Ferrara</strong>. I build instrumentation and data acquisition
+    systems, from particle detectors to optics for gravitational wave observatories.
+  </p>
+
+  <section>
+    <h2>Work</h2>
+    <p>
+      My research runs across three areas that share the same underlying craft:
+      measuring small signals reliably. I work on particle physics with BESIII,
+      on nuclear physics and electric dipole moment searches with JEDI, and on
+      the optical characterisation of substrates for the Einstein Telescope.
+    </p>
+    <p>
+      Outside the lab, I am national vice-president of Pint of Science Italia,
+      which brings researchers into pubs to talk about what they actually do.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <dl>
+      <div class="row">
+        <dt>Email</dt>
+        <dd><a href="mailto:INSERISCI@unife.it">INSERISCI@unife.it</a></dd>
+      </div>
+      <div class="row">
+        <dt>Where</dt>
+        <dd>Dipartimento di Fisica e Scienze della Terra, Ferrara, Italy</dd>
+      </div>
+      <div class="row">
+        <dt>ORCID</dt>
+        <dd><a href="https://orcid.org/0000-0003-2262-7077">0000-0003-2262-7077</a></dd>
+      </div>
+    </dl>
+
+    <a class="save" href="contact.vcf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Save my contact
+    </a>
+    <p class="hint">Downloads a contact card your phone can add straight to its address book.</p>
+  </section>
+
+  <footer>
+    Last updated September 2026.
+  </footer>
+
+</main>
+</body>
+</html>
