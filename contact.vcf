@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Canale;Nicola;;;
+FN:Nicola Canale
+TITLE:Post-doc Researcher
+ORG:University of Ferrara;INFN Ferrara
+TEL;TYPE=CELL:+393298726201
+EMAIL;TYPE=WORK:ncanale@fe.infn.it
+ADR;TYPE=WORK:;;Via Saragat 1;Ferrara;;44121;Italia
+URL:https://www.linkedin.com/in/nicola-canale/
+PHOTO;VALUE=URI:https://nicola-canale.github.io/foto.jpg
+REV:2026-09-20T00:00:00Z
+END:VCARD
